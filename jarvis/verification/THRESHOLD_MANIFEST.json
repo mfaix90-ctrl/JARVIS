@@ -3,6 +3,6 @@
   "module": "verification",
   "module_version": "6.1.0",
   "vector_count": 37,
-  "integrity": "locked",
+  "integrity": "unlocked",
   "deterministic": true
 }
