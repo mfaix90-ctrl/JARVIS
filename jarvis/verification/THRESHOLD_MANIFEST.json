@@ -1,9 +1,0 @@
-{
-  "manifest_version": "1.0.0",
-  "module": "verification",
-  "module_version": "6.1.0",
-  "vector_count": 37,
-  "integrity": "unlocked",
-  "deterministic": true,
-  "manifest_hash": "95b5eb5dab1e9356699b72e7a2ffa3fe300d2e6ee69ec8407b9262210b58517a"
-}
