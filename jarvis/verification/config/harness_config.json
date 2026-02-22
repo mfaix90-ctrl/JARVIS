@@ -1,0 +1,18 @@
+{
+    "harness_version":       "1.0.0",
+    "expected_module_version": "6.1.0",
+    "storage_format_version": "1.0.0",
+    "matrix_version":        "1.0.0",
+    "timeout_seconds":       600,
+    "default_manifest_path": "jarvis/risk/THRESHOLD_MANIFEST.json",
+    "default_runs_dir":      "jarvis/verification/runs",
+    "single_threaded":       true,
+    "no_network_access":     true,
+    "no_random_seed":        true,
+    "notes": [
+        "Timeout of 600s enforces OC-01 (10-minute wall-clock limit).",
+        "single_threaded enforces EEP-01.",
+        "no_network_access enforces OC-04 and DIM-07.",
+        "no_random_seed enforces EEP-07."
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "result": "PASS",
+    "run_id": "RUN-20260221-390A775C",
+    "harness_version": "1.0.0",
+    "module_version": "6.1.0",
+    "manifest_hash": "5b8cd5e2aa9717663696214e80d6b1b15fa6dd5df947df726530141887622957",
+    "vectors_executed": 37,
+    "bic_passed": true,
+    "ccv_passed": true,
+    "ccv_notes": [
+        "CCV-D-02: CR-01 exposure_weight=0.019800996439234053. May be below SHOCK_EXPOSURE_CAP per INV-04 (specified behaviour).",
+        "CCV-D-03: CR-03 is non-CRISIS with JRM active. Dampening not applied. Verified by absence of *0.75 in BIC comparison."
+    ],
+    "er_record_path": "jarvis\\verification\\runs\\RUN-20260221-390A775C_ER_20260221T102427Z.json",
+    "re_record_path": "jarvis\\verification\\runs\\RUN-20260221-390A775C_RE_20260221T102427Z.json",
+    "timestamp_iso": "2026-02-21T10:24:27.410558+00:00"
+}
