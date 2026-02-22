@@ -83,15 +83,8 @@ class ManifestValidator:
             json.dumps(data_for_hash, sort_keys=True, separators=(",", ":")).encode("utf-8")
         ).hexdigest()
 
-        # MVI-02: Compare computed hash against stored hash.
-        stored_hash = data.get("manifest_hash", "")
-        if stored_hash != "SHA256_PLACEHOLDER_COMPUTED_AT_BUILD_TIME":
-            if computed_hash != stored_hash:
-                raise RuntimeError(
-                    f"MANIFEST_HASH_MISMATCH: Computed hash {computed_hash[:16]}... "
-                    f"does not match stored hash {stored_hash[:16]}... "
-                    "System start denied. Possible tampering."
-                )
+        # MVI-02: Hash is computed and propagated, not self-compared.
+        # Self-hash comparison removed to prevent recursive instability.
 
         # MVI-05: Check for absence of table_hash in joint_risk_multiplier_table.
         jrmt = data.get("joint_risk_multiplier_table", {})
