@@ -30,4 +30,7 @@ jobs:
 
     - name: Run DVH harness
       run: |
-        python -m jarvis.verification.run_harness
+        python -m jarvis.verification.run_harness \
+          --manifest-path jarvis/verification/THRESHOLD_MANIFEST.json \
+          --module-version 6.1.0 \
+          --runs-dir jarvis/verification/runs
